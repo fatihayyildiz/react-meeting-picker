@@ -13,11 +13,15 @@ const App = () => {
 	}, [dispatch]);
 
 	return (
-		<div>
-			{loading ? <span>Loading ...</span> : <span>Loaded</span>}
-			{companies?.map((co) => {
-				return <p key={co.id}>{co.name}</p>;
-			})}
+		<div className="row">
+			<div className="col-2">
+				{loading ? <span>Loading ...</span> : <span>Loaded</span>}
+			</div>
+			<div className="col-10">
+				{companies?.map((co) => {
+					return <p key={co.id}>{co.name}</p>;
+				})}
+			</div>
 		</div>
 	);
 };
