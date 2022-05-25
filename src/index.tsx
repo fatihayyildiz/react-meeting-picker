@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from 'components/App';
+import DateSelect from 'pages/DateSelect/DateSelect';
 import { worker } from 'mocks/browser';
 import { store } from 'store/store';
 import { Provider } from 'react-redux';
@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
 	<React.Fragment>
 		<Provider store={store}>
-			<App />
+			<DateSelect />
 		</Provider>
 	</React.Fragment>,
 );
