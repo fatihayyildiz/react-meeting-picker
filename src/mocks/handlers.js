@@ -3,7 +3,7 @@ import TimeSlots from './time_slots.json';
 
 export const handlers = [
 	// Handles a GET /slots request
-	rest.get('/slots', (req, res, ctx) => {
+	rest.get('/api/slots', (req, res, ctx) => {
 		return res(
 			ctx.status(200),
 			ctx.json(TimeSlots),
