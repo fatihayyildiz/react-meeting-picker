@@ -24,7 +24,7 @@
 <h3 align="center">React.js + Typescript Meeting Picker App</h3>
 
   <p align="center">
-    This project implemented for solve code challenge with React.js and Typescript. 
+    This project implemented with React.js and Typescript. 
 Contains all features/requirements written in Assignment document. 
 Develop for Agents which they can use this website to choose a (possible for the seller) time slot
 in several days.
