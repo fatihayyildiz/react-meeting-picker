@@ -19,7 +19,7 @@ describe('Mapper Test', () => {
 		);
 
 		// check random entry is correct
-		expect(formattedResult[randomCompanyIndex]).toStrictEqual(
+		expect(formattedResult[randomCompanyIndex]).toEqual(
 			FormattedCompaniesSlot[randomCompanyIndex]
 		);
 	});
