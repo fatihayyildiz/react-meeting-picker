@@ -28,7 +28,7 @@ const slotSlice = createSlice({
 						end_time: action.payload.end_time
 					},
 				};
-				// Agent didnt selected any slot for this company
+				// Agent didn't select any slot for this company
 			// push new slot to store
 			else
 				state.selectedCompanySlots.push({
@@ -41,15 +41,10 @@ const slotSlice = createSlice({
 				});
 		},
 		removeSlotForCompany: (state,action:PayloadAction<TimeSlotProps>)=>{
+			// Find selected company slot index
 			const checkSelectedSlotIndex = state.selectedCompanySlots.findIndex((slot) => slot.id === action.payload.id);
-			console.log('check slot index:',checkSelectedSlotIndex,action.payload)
-			//const shallowCopy = JSON.parse(JSON.stringify(state.selectedCompanySlots))
-			state.selectedCompanySlots.splice(checkSelectedSlotIndex,checkSelectedSlotIndex+1)
-			//console.log('state.selectedCompanySlots:',shallowCopy)
-			//state.selectedCompanySlots = shallowCopy
-			//console.log('new company slots:',newCompanySlots)
-			//state.selectedCompanySlots = newCompanySlots
-
+			// Remove found index value from store
+			state.selectedCompanySlots.splice(checkSelectedSlotIndex,1)
 		}
 	},
 	extraReducers: (builder) => {
