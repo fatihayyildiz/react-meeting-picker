@@ -23,8 +23,8 @@ describe('Mapper Test', () => {
 		);
 
 		// check random entry is correct
-		expect(JSON.stringify(formattedResult[randomCompanyIndex])).toBe(
-			JSON.stringify(FormattedCompaniesSlot[randomCompanyIndex])
+		expect(formattedResult[randomCompanyIndex]).toBe(
+			FormattedCompaniesSlot[randomCompanyIndex]
 		);
 	});
 });
