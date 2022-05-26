@@ -164,7 +164,7 @@ Webstorm IDE can detect this config automatically.
    <br />
 
     ```sh
-    npm test
+    npm run test
     ```
 2. To generate test coverage report, run this following command:
     ```sh
@@ -174,7 +174,7 @@ Webstorm IDE can detect this config automatically.
    <br />
 
     ```sh
-    npm test:coverage
+    npm run test:coverage
     ```
 
 3. Test coverage report should generate under root directory /coverage folder
