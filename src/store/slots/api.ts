@@ -1,5 +1,5 @@
 import {HttpClient} from 'utils/HttpClient';
-import {Company} from 'store/slots/types';
+import {APICompany} from 'store/slots/types';
 
 export class SlotsApi extends HttpClient{
 	private static classInstance?: SlotsApi
@@ -17,7 +17,7 @@ export class SlotsApi extends HttpClient{
 	}
 
 	public getAllSlots = () =>
-		this.instance.get<Array<Company>>(
+		this.instance.get<Array<APICompany>>(
 			`/slots`
 		)
 }

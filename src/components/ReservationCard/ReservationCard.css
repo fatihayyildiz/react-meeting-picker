@@ -1,0 +1,6 @@
+.clear-link {
+	text-decoration: underline;
+	color: darkcyan;
+	font-size: 10px;
+	cursor: pointer;
+}

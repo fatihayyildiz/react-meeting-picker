@@ -95,6 +95,8 @@ Clone this repository with following command:
   git clone https://github.com/fatihayyildiz/react-meeting-picker.git
   ```
 
+You can take a look to progress at this [Trello Board](https://trello.com/invite/b/J2Me5uZS/bc0349da22a6f4f09f5e8c1d3f11a7b3/react-meeting-picker) * Trello account required
+
 ### Prerequisites
 
 Requirements to run this project locally:
