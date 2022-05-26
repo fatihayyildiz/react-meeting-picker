@@ -1,10 +1,10 @@
 name: Push Checks
 
-on: [push]
+on: [pull_request]
 
 jobs:
   build:
-    name: Lint / Pretty
+    name: Run tests & Build
     runs-on: ubuntu-18.04
     strategy:
       matrix:
@@ -17,7 +17,8 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
 
-      - name: run Push Checks
+      - name: run Pull Request Checks
         run: |
           yarn install
-          yarn lint
+          yarn test
+          yarn build
