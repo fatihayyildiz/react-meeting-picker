@@ -66,7 +66,7 @@ in several days.
 <!-- ABOUT THE PROJECT -->
 ## Screenshot
 
-[![To Do App Screen Shot][product-screenshot]](https://github.com/fatihayyildiz/react-meeting-picker/blob/master/misc/screenshot.png?raw=true)
+<img src="https://github.com/fatihayyildiz/react-meeting-picker/blob/master/misc/screenshot.png?raw=true" alt="Project Screenshot">
 
 
 ### Built With
