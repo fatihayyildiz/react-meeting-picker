@@ -37,8 +37,6 @@ exports[`Reservation card render with props should match with snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Reservation card renders times correctly 1`] = `undefined`;
-
 exports[`Reservation card should match with snapshot 1`] = `
 <DocumentFragment>
   <div
