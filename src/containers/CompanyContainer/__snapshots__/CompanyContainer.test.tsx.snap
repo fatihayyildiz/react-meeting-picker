@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Company Container should match with snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="top-sticky"
+    >
+      <div
+        class="row centered-box"
+      >
+        <span>
+          company1
+        </span>
+      </div>
+      <div
+        class="row centered-box"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-12"
+            >
+              Reservation
+            </div>
+          </div>
+          <div
+            class="row"
+          >
+            <div
+              class="col-5"
+            />
+            <div
+              class="col-2"
+            >
+              -
+            </div>
+            <div
+              class="col-5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="container centered-box"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-12"
+          >
+            18.03 - Monday
+          </div>
+        </div>
+        <div
+          class="row g-0 centered-box"
+        >
+          <div
+            class="row time-slot-box available"
+          >
+            <div
+              class="col-4"
+            >
+              08:00
+            </div>
+            <div
+              class="col-2"
+            >
+              -
+            </div>
+            <div
+              class="col-4"
+            >
+              09:00
+            </div>
+          </div>
+          <div
+            class="row time-slot-box available"
+          >
+            <div
+              class="col-4"
+            >
+              10:00
+            </div>
+            <div
+              class="col-2"
+            >
+              -
+            </div>
+            <div
+              class="col-4"
+            >
+              11:00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container centered-box"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="col-12"
+          >
+            19.03 - Tuesday
+          </div>
+        </div>
+        <div
+          class="row g-0 centered-box"
+        >
+          <div
+            class="row time-slot-box available"
+          >
+            <div
+              class="col-4"
+            >
+              12:00
+            </div>
+            <div
+              class="col-2"
+            >
+              -
+            </div>
+            <div
+              class="col-4"
+            >
+              13:00
+            </div>
+          </div>
+          <div
+            class="row time-slot-box available"
+          >
+            <div
+              class="col-4"
+            >
+              14:00
+            </div>
+            <div
+              class="col-2"
+            >
+              -
+            </div>
+            <div
+              class="col-4"
+            >
+              16:00
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

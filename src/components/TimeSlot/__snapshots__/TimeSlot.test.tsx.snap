@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeslot should match with snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="row time-slot-box available"
+  >
+    <div
+      class="col-4"
+    >
+      08:00
+    </div>
+    <div
+      class="col-2"
+    >
+      -
+    </div>
+    <div
+      class="col-4"
+    >
+      09:00
+    </div>
+  </div>
+</DocumentFragment>
+`;
