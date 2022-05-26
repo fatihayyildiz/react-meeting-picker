@@ -1,30 +1,30 @@
 import React from 'react';
 import { cleanup, screen, RenderResult } from '@testing-library/react';
 import TimeSlot from 'components/TimeSlot/TimeSlot';
-import {testRenderWithStore} from 'utils/testRenderWithStore';
-import {MockReduxStoreInitialState} from 'utils/mockReduxStore';
+import { testRenderWithStore } from 'utils/testRenderWithStore';
+import { MockReduxStoreInitialState } from 'utils/mockReduxStore';
 
 afterEach(cleanup);
 
 const testProps = {
 	id: 1,
-	day: 'July 9, 2018',
+	day: 'Monday July 9, 2018',
 	start_time: '08:00',
 	end_time: '09:00',
 	available: true,
 	selected: true,
 };
 
-
-const renderTimeSlot = ():RenderResult =>
-	testRenderWithStore(<TimeSlot
-		end_time={testProps.end_time}
-		start_time={testProps.start_time}
-		id={testProps.id}
-		day={testProps.day}
-	/>,MockReduxStoreInitialState)
-
-
+const renderTimeSlot = (): RenderResult =>
+	testRenderWithStore(
+		<TimeSlot
+			end_time={testProps.end_time}
+			start_time={testProps.start_time}
+			id={testProps.id}
+			day={testProps.day}
+		/>,
+		MockReduxStoreInitialState
+	);
 
 test('Timeslot should match with snapshot', () => {
 	// First render component and get as fragment
@@ -48,7 +48,6 @@ test('Timeslot renders times correctly', () => {
 		testProps.end_time
 	);
 });
-
 
 test('Timeslot renders conditional classnames correctly', () => {
 	// First render component with props and get as fragment

@@ -15,6 +15,7 @@ exports[`Reservation card should match with snapshot 1`] = `
       </div>
       <div
         class="col-3 my-auto"
+        data-testid="clear"
       >
         <span
           class="clear-link"
@@ -29,7 +30,7 @@ exports[`Reservation card should match with snapshot 1`] = `
       <div
         class="col-12"
       >
-        July 9, 2018
+        Monday July 9, 2018
       </div>
     </div>
     <div

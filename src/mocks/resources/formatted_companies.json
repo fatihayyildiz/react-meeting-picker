@@ -1,126 +1,650 @@
 [
-	{
-		"name": "company1",
-		"days": [
-			{
-				"day": "18.03 - Monday",
-				"slots": [
-					{
-						"start_time": "08:00",
-						"end_time": "09:00"
-					},
-					{
-						"start_time": "10:00",
-						"end_time": "11:00"
-					}
-				]
-			},
-			{
-				"day": "19.03 - Tuesday",
-				"slots": [
-					{
-						"start_time": "12:00",
-						"end_time": "13:00"
-					},
-					{
-						"start_time": "14:00",
-						"end_time": "16:00"
-					}
-				]
-			}
-		]
-	},
-	{
-		"name": "company2",
-		"days": [
-			{
-				"day": "21.03 - Thursday",
-				"slots": [
-					{
-						"start_time": "08:00",
-						"end_time": "09:00"
-					},
-					{
-						"start_time": "10:00",
-						"end_time": "11:00"
-					}
-				]
-			},
-			{
-				"day": "22.03 - Friday",
-				"slots": [
-					{
-						"start_time": "12:00",
-						"end_time": "13:00"
-					},
-					{
-						"start_time": "14:00",
-						"end_time": "16:00"
-					}
-				]
-			}
-		]
-	},
-	{
-		"name": "company2",
-		"days": [
-			{
-				"day": "21.03 - Thursday",
-				"slots": [
-					{
-						"start_time": "08:00",
-						"end_time": "09:00"
-					},
-					{
-						"start_time": "10:00",
-						"end_time": "11:00"
-					}
-				]
-			},
-			{
-				"day": "22.03 - Friday",
-				"slots": [
-					{
-						"start_time": "12:00",
-						"end_time": "13:00"
-					},
-					{
-						"start_time": "14:00",
-						"end_time": "16:00"
-					}
-				]
-			}
-		]
-	},
-	{
-		"name": "company2",
-		"days": [
-			{
-				"day": "21.03 - Thursday",
-				"slots": [
-					{
-						"start_time": "08:00",
-						"end_time": "09:00"
-					},
-					{
-						"start_time": "10:00",
-						"end_time": "11:00"
-					}
-				]
-			},
-			{
-				"day": "22.03 - Friday",
-				"slots": [
-					{
-						"start_time": "12:00",
-						"end_time": "13:00"
-					},
-					{
-						"start_time": "14:00",
-						"end_time": "16:00"
-					}
-				]
-			}
-		]
-	}
+  {
+    "id": 1,
+    "name": "Company 1",
+    "days": [
+      {
+        "day": "Monday July 9, 2018",
+        "slots": [
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "12:00",
+            "end_time": "13:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "12:30",
+            "end_time": "14:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "13:00",
+            "end_time": "14:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "13:30",
+            "end_time": "15:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday July 10, 2018",
+        "slots": [
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "12:00",
+            "end_time": "13:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "12:30",
+            "end_time": "14:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "13:00",
+            "end_time": "14:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "13:30",
+            "end_time": "15:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "14:00",
+            "end_time": "15:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "14:30",
+            "end_time": "16:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "15:00",
+            "end_time": "16:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "15:30",
+            "end_time": "17:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday July 12, 2018",
+        "slots": [
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "18:00",
+            "end_time": "19:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "18:30",
+            "end_time": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday July 13, 2018",
+        "slots": [
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Company 2",
+    "days": [
+      {
+        "day": "Monday July 9, 2018",
+        "slots": [
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "12:00",
+            "end_time": "13:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "12:30",
+            "end_time": "14:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "13:00",
+            "end_time": "14:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "13:30",
+            "end_time": "15:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday July 10, 2018",
+        "slots": [
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "12:00",
+            "end_time": "13:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "12:30",
+            "end_time": "14:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "13:00",
+            "end_time": "14:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "13:30",
+            "end_time": "15:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "14:00",
+            "end_time": "15:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "14:30",
+            "end_time": "16:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "15:00",
+            "end_time": "16:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "15:30",
+            "end_time": "17:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday July 12, 2018",
+        "slots": [
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "18:00",
+            "end_time": "19:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "18:30",
+            "end_time": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday July 13, 2018",
+        "slots": [
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Company 3",
+    "days": [
+      {
+        "day": "Monday July 9, 2018",
+        "slots": [
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "12:00",
+            "end_time": "13:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "12:30",
+            "end_time": "14:00"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "13:00",
+            "end_time": "14:30"
+          },
+          {
+            "day": "Monday July 9, 2018",
+            "start_time": "13:30",
+            "end_time": "15:00"
+          }
+        ]
+      },
+      {
+        "day": "Tuesday July 10, 2018",
+        "slots": [
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "12:00",
+            "end_time": "13:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "12:30",
+            "end_time": "14:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "13:00",
+            "end_time": "14:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "13:30",
+            "end_time": "15:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "14:00",
+            "end_time": "15:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "14:30",
+            "end_time": "16:00"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "15:00",
+            "end_time": "16:30"
+          },
+          {
+            "day": "Tuesday July 10, 2018",
+            "start_time": "15:30",
+            "end_time": "17:00"
+          }
+        ]
+      },
+      {
+        "day": "Thursday July 12, 2018",
+        "slots": [
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "18:00",
+            "end_time": "19:30"
+          },
+          {
+            "day": "Thursday July 12, 2018",
+            "start_time": "18:30",
+            "end_time": "20:00"
+          }
+        ]
+      },
+      {
+        "day": "Friday July 13, 2018",
+        "slots": [
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "09:00",
+            "end_time": "10:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "09:30",
+            "end_time": "11:00"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "10:00",
+            "end_time": "11:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "10:30",
+            "end_time": "12:00"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "11:00",
+            "end_time": "12:30"
+          },
+          {
+            "day": "Friday July 13, 2018",
+            "start_time": "11:30",
+            "end_time": "13:00"
+          }
+        ]
+      }
+    ]
+  }
 ]

@@ -3,9 +3,8 @@ import { cleanup, RenderResult } from '@testing-library/react';
 import DaySlots from 'containers/DaySlots/DaySlots';
 import SingleFormattedCompany from 'mocks/resources/single_formatted_company.json';
 import { TimeSlotProps } from 'components/TimeSlot/TimeSlot';
-import {testRenderWithStore} from 'utils/testRenderWithStore';
-import {MockReduxStoreInitialState} from 'utils/mockReduxStore';
-
+import { testRenderWithStore } from 'utils/testRenderWithStore';
+import { MockReduxStoreInitialState } from 'utils/mockReduxStore';
 
 afterEach(cleanup);
 
@@ -16,13 +15,13 @@ const testProps = {
 		.slots as unknown as Array<TimeSlotProps>,
 };
 
-
-const renderDaySlot = ():RenderResult =>
-	testRenderWithStore(<DaySlots
-		{...{ day: testProps.day, slots: testProps.slots, id: testProps.id }}
-	/>,MockReduxStoreInitialState)
-
-
+const renderDaySlot = (): RenderResult =>
+	testRenderWithStore(
+		<DaySlots
+			{...{ day: testProps.day, slots: testProps.slots, id: testProps.id }}
+		/>,
+		MockReduxStoreInitialState
+	);
 
 test('Day slots should match with snapshot', () => {
 	// First render component and get as fragment
@@ -47,5 +46,4 @@ test('Day slots renders classnames correctly', () => {
 
 	// Check rows also contains time slots row classnames
 	expect(row.length).toBe(4);
-
 });
