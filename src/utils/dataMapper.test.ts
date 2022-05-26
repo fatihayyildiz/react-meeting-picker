@@ -1,7 +1,7 @@
 import { convertApiResponseToFEModel } from 'utils/dataMapper';
 import ApiTimeSlots from 'mocks/resources/time_slots.json';
 import FormattedCompaniesSlot from 'mocks/resources/formatted_companies.json';
-import { APICompany } from 'store/slots/types';
+import { APICompany, CompanySlots } from 'store/slots/types';
 
 describe('Mapper Test', () => {
 	it('convertApiResponseToFEModel data mapper should map data correctly', () => {
@@ -11,7 +11,7 @@ describe('Mapper Test', () => {
 		);
 
 		// Compare deeply with json file
-		expect(formattedResult).toEqual(FormattedCompaniesSlot);
+		expect(JSON.stringify(formattedResult)).toEqual(JSON.stringify(FormattedCompaniesSlot as unknown as Array<CompanySlots>));
 
 		// compare random entry with result
 		const randomCompanyIndex = Math.floor(
@@ -19,8 +19,8 @@ describe('Mapper Test', () => {
 		);
 
 		// check random entry is correct
-		expect(formattedResult[randomCompanyIndex]).toEqual(
-			FormattedCompaniesSlot[randomCompanyIndex]
+		expect(JSON.stringify(formattedResult[randomCompanyIndex])).toEqual(
+			JSON.stringify(FormattedCompaniesSlot[randomCompanyIndex])
 		);
 	});
 });
