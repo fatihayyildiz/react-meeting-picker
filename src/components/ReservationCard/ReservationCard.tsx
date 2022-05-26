@@ -32,6 +32,7 @@ const ReservationCard = ({
 				<div
 					className="col-3 my-auto"
 					onClick={() => removeSelectedReservation()}
+					data-testid="clear"
 				>
 					<span className="clear-link">clear</span>
 				</div>

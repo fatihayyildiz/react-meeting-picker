@@ -9,11 +9,13 @@ import LocalizedFormat from 'dayjs/plugin/localizedFormat';
 
 dayjs.extend(LocalizedFormat);
 
-export const convertApiResponseToFEModel = (companies: Array<APICompany>) => {
-	const convertedCompanySlots = companies.map((company: APICompany) => {
+const convertApiResponseToFEModel = (companies: Array<APICompany>) => {
+	return companies.map((company: APICompany) => {
 		const daysArray = company.time_slots.reduce(
 			(acc: Array<DaySlots>, curr) => {
-				let currentDay = dayjs(curr.start_time).format('LL');
+				let currentDay = `${dayjs(curr.start_time).format('dddd')} ${dayjs(
+					curr.start_time
+				).format('LL')}`;
 				let foundIndexInDays = acc.findIndex((day) => day.day === currentDay);
 
 				if (foundIndexInDays > -1) {
@@ -38,14 +40,12 @@ export const convertApiResponseToFEModel = (companies: Array<APICompany>) => {
 			},
 			[]
 		);
-		//console.log('converted days:',daysArray);
 		return {
 			id: company.id,
 			name: company.name,
 			days: daysArray as Array<DaySlots>,
 		};
 	}) as Array<CompanySlots>;
-
-	console.log('converted companies:', convertedCompanySlots);
-	return convertedCompanySlots;
 };
+
+export { convertApiResponseToFEModel };

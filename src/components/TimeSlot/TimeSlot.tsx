@@ -106,6 +106,7 @@ const TimeSlot = ({ id, day, start_time, end_time }: TimeSlotProps) => {
 				selected: selectedCompanySlot,
 			})}
 			onClick={() => onSlotClick()}
+			data-testid="time-slot"
 		>
 			<div className="col-4">{start_time}</div>
 			<div className="col-2">-</div>

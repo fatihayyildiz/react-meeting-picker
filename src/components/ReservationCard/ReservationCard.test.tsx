@@ -1,27 +1,30 @@
 import React from 'react';
 import { cleanup, screen, RenderResult } from '@testing-library/react';
 import ReservationCard from 'components/ReservationCard/ReservationCard';
-import {testRenderWithStore} from 'utils/testRenderWithStore';
-import {MockReduxStoreInitialState} from 'utils/mockReduxStore';
-
+import { testRenderWithStore } from 'utils/testRenderWithStore';
+import { MockReduxStoreInitialState } from 'utils/mockReduxStore';
 
 const testProps = {
 	id: 1,
-	day: 'July 9, 2018',
+	day: 'Monday July 9, 2018',
 	start_time: '08:00',
 	end_time: '09:00',
 };
 
-const renderReservationCard = ():RenderResult =>
-	testRenderWithStore(<ReservationCard {...{
-		id: testProps.id,
-		day: testProps.day,
-		start_time: testProps.start_time,
-		end_time: testProps.end_time,
-	}} />,MockReduxStoreInitialState)
+const renderReservationCard = (): RenderResult =>
+	testRenderWithStore(
+		<ReservationCard
+			{...{
+				id: testProps.id,
+				day: testProps.day,
+				start_time: testProps.start_time,
+				end_time: testProps.end_time,
+			}}
+		/>,
+		MockReduxStoreInitialState
+	);
 
 afterEach(cleanup);
-
 
 test('Reservation card should match with snapshot', () => {
 	// First render component and get as fragment
@@ -30,7 +33,6 @@ test('Reservation card should match with snapshot', () => {
 	// Compare with saved snapshot
 	expect(asFragment()).toMatchSnapshot();
 });
-
 
 test('Reservation card renders times correctly', () => {
 	// First render component with props and get as fragment

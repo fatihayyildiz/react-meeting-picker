@@ -19,6 +19,7 @@ exports[`Day slots should match with snapshot 1`] = `
     >
       <div
         class="row time-slot-box"
+        data-testid="time-slot"
       >
         <div
           class="col-4"
@@ -38,6 +39,7 @@ exports[`Day slots should match with snapshot 1`] = `
       </div>
       <div
         class="row time-slot-box"
+        data-testid="time-slot"
       >
         <div
           class="col-4"

@@ -22,10 +22,9 @@ const CompanyContainer = ({ id, name, days }: CompanyContainerProps) => {
 			const foundCompanyIndex = selectedCompanySlots.findIndex(
 				(slot) => slot.id === id
 			);
-			if (foundCompanyIndex > -1) {
-				console.log('Selected company slot:', selectedCompanySlots);
+			if (foundCompanyIndex > -1)
 				setSelectedSlot(selectedCompanySlots[foundCompanyIndex]);
-			} else setSelectedSlot(undefined);
+			else setSelectedSlot(undefined);
 		} else setSelectedSlot(undefined);
 	}, [selectedCompanySlots, id]);
 
