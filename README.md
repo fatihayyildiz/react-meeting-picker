@@ -30,8 +30,6 @@ Develop for Agents which they can use this website to choose a (possible for the
 in several days.
     <br />
     <br />
-    <a href="https://fatihayyildiz.github.io/react-meeting-picker/">Live Demo</a>
-    ·
     <a href="https://github.com/fatihayyildiz/react-meeting-picker/issues">Report Bug</a>
     ·
     <a href="https://github.com/fatihayyildiz/react-meeting-picker/issues">Request Feature</a>
@@ -55,6 +53,7 @@ in several days.
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#tests">Tests</a></li>
         <li><a href="#known-issues">Known Issues</a></li>
       </ul>
     </li>
@@ -140,7 +139,45 @@ Webstorm IDE can detect this config automatically.
    ```sh
    npm install
    ```
-3. Visit in your favorite browser this url: http://localhost:3000
+3. Start project on your local with following command:
+    ```sh
+    yarn start
+    ```
+    or
+    <br />
+
+    ```sh
+    npm start
+    ```
+
+4. Visit in your favorite browser this url: http://localhost:3000
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Tests
+
+1. To run test on your local, run this following command:
+    ```sh
+    yarn test
+    ```
+   or
+   <br />
+
+    ```sh
+    npm test
+    ```
+2. To generate test coverage report, run this following command:
+    ```sh
+    yarn test:coverage
+    ```
+   or
+   <br />
+
+    ```sh
+    npm test:coverage
+    ```
+
+3. Test coverage report should generate under root directory /coverage folder
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
