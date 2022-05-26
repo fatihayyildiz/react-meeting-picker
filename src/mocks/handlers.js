@@ -1,5 +1,5 @@
 import { rest } from 'msw';
-import TimeSlots from './time_slots.json';
+import TimeSlots from './resources/time_slots.json';
 
 export const handlers = [
 	// Handles a GET /slots request

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Day slots should match with snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container centered-box"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-12"
+      >
+        18.03 - Monday
+      </div>
+    </div>
+    <div
+      class="row g-0 centered-box"
+    >
+      <div
+        class="row time-slot-box available"
+      >
+        <div
+          class="col-4"
+        >
+          08:00
+        </div>
+        <div
+          class="col-2"
+        >
+          -
+        </div>
+        <div
+          class="col-4"
+        >
+          09:00
+        </div>
+      </div>
+      <div
+        class="row time-slot-box available"
+      >
+        <div
+          class="col-4"
+        >
+          10:00
+        </div>
+        <div
+          class="col-2"
+        >
+          -
+        </div>
+        <div
+          class="col-4"
+        >
+          11:00
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
