@@ -11,7 +11,7 @@ describe('Mapper Test', () => {
 		);
 
 		// Compare deeply with json file
-		expect(formattedResult).toStrictEqual(FormattedCompaniesSlot);
+		expect(formattedResult).toEqual(FormattedCompaniesSlot);
 
 		// compare random entry with result
 		const randomCompanyIndex = Math.floor(
