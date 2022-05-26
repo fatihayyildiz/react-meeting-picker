@@ -5,6 +5,8 @@ import TimeSlot from 'components/TimeSlot/TimeSlot';
 afterEach(cleanup);
 
 const testProps = {
+	id: 1,
+	day: 'July 9, 2018',
 	start_time: '08:00',
 	end_time: '09:00',
 	available: true,
@@ -14,7 +16,12 @@ const testProps = {
 test('Timeslot should match with snapshot', () => {
 	// First render component and get as fragment
 	const { asFragment } = render(
-		<TimeSlot end_time={testProps.end_time} start_time={testProps.start_time} />
+		<TimeSlot
+			end_time={testProps.end_time}
+			start_time={testProps.start_time}
+			id={testProps.id}
+			day={testProps.day}
+		/>
 	);
 
 	// Compare with saved snapshot
@@ -24,7 +31,12 @@ test('Timeslot should match with snapshot', () => {
 test('Timeslot renders times correctly', () => {
 	// First render component with props and get as fragment
 	render(
-		<TimeSlot start_time={testProps.start_time} end_time={testProps.end_time} />
+		<TimeSlot
+			day={testProps.day}
+			start_time={testProps.start_time}
+			end_time={testProps.end_time}
+			id={testProps.id}
+		/>
 	);
 
 	// Compare start time
@@ -42,10 +54,12 @@ test('Timeslot renders conditional classnames correctly | All true', () => {
 	// First render component with props and get as fragment
 	const { container } = render(
 		<TimeSlot
+			day={testProps.day}
 			start_time={testProps.start_time}
 			end_time={testProps.end_time}
 			available={testProps.available}
 			selected={testProps.selected}
+			id={testProps.id}
 		/>
 	);
 
@@ -66,10 +80,12 @@ test('Timeslot renders conditional classnames correctly | All FALSE', () => {
 	// First render component with props and get as fragment
 	const { container } = render(
 		<TimeSlot
+			day={testProps.day}
 			start_time={testProps.start_time}
 			end_time={testProps.end_time}
 			available={false}
 			selected={false}
+			id={testProps.id}
 		/>
 	);
 

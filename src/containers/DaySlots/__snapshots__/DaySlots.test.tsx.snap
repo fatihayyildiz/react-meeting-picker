@@ -15,7 +15,7 @@ exports[`Day slots should match with snapshot 1`] = `
       </div>
     </div>
     <div
-      class="row g-0 centered-box"
+      class="row g-0 centered-box no-border"
     >
       <div
         class="row time-slot-box available"
