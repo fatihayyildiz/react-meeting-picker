@@ -57,8 +57,6 @@ test('Timeslot renders conditional classnames correctly | All true', () => {
 			day={testProps.day}
 			start_time={testProps.start_time}
 			end_time={testProps.end_time}
-			available={testProps.available}
-			selected={testProps.selected}
 			id={testProps.id}
 		/>
 	);
@@ -83,8 +81,6 @@ test('Timeslot renders conditional classnames correctly | All FALSE', () => {
 			day={testProps.day}
 			start_time={testProps.start_time}
 			end_time={testProps.end_time}
-			available={false}
-			selected={false}
 			id={testProps.id}
 		/>
 	);

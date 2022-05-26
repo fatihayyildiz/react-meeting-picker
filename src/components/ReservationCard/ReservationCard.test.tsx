@@ -5,6 +5,7 @@ import ReservationCard from 'components/ReservationCard/ReservationCard';
 afterEach(cleanup);
 
 const testProps = {
+	id: 1,
 	day: 'July 9, 2018',
 	start_time: '08:00',
 	end_time: '09:00',
@@ -15,6 +16,7 @@ test('Reservation card should match with snapshot', () => {
 	const { asFragment } = render(
 		<ReservationCard
 			{...{
+				id: testProps.id,
 				day: testProps.day,
 				start_time: testProps.start_time,
 				end_time: testProps.end_time,
@@ -31,6 +33,7 @@ test('Reservation card render with props should match with snapshot', () => {
 	const { asFragment } = render(
 		<ReservationCard
 			{...{
+				id: testProps.id,
 				day: testProps.day,
 				start_time: testProps.start_time,
 				end_time: testProps.end_time,
@@ -47,6 +50,7 @@ test('Reservation card renders times correctly', () => {
 	render(
 		<ReservationCard
 			{...{
+				id: testProps.id,
 				day: testProps.day,
 				start_time: testProps.start_time,
 				end_time: testProps.end_time,

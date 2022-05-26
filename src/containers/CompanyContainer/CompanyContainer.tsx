@@ -25,8 +25,8 @@ const CompanyContainer = ({ id, name, days }: CompanyContainerProps) => {
 			if (foundCompanyIndex > -1) {
 				console.log('Selected company slot:', selectedCompanySlots);
 				setSelectedSlot(selectedCompanySlots[foundCompanyIndex]);
-			}
-		}
+			} else setSelectedSlot(undefined);
+		} else setSelectedSlot(undefined);
 	}, [selectedCompanySlots, id]);
 
 	return (
@@ -38,6 +38,7 @@ const CompanyContainer = ({ id, name, days }: CompanyContainerProps) => {
 				{selectedSlot && (
 					<div className="row centered-box">
 						<ReservationCard
+							id={id}
 							day={selectedSlot.selectedSlot.day}
 							start_time={selectedSlot.selectedSlot.start_time}
 							end_time={selectedSlot.selectedSlot.end_time}
