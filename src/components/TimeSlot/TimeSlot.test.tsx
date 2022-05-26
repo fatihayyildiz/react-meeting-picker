@@ -1,6 +1,8 @@
 import React from 'react';
-import { render, cleanup, screen } from '@testing-library/react';
+import { cleanup, screen, RenderResult } from '@testing-library/react';
 import TimeSlot from 'components/TimeSlot/TimeSlot';
+import {testRenderWithStore} from 'utils/testRenderWithStore';
+import {MockReduxStoreInitialState} from 'utils/mockReduxStore';
 
 afterEach(cleanup);
 
@@ -13,16 +15,20 @@ const testProps = {
 	selected: true,
 };
 
+
+const renderTimeSlot = ():RenderResult =>
+	testRenderWithStore(<TimeSlot
+		end_time={testProps.end_time}
+		start_time={testProps.start_time}
+		id={testProps.id}
+		day={testProps.day}
+	/>,MockReduxStoreInitialState)
+
+
+
 test('Timeslot should match with snapshot', () => {
 	// First render component and get as fragment
-	const { asFragment } = render(
-		<TimeSlot
-			end_time={testProps.end_time}
-			start_time={testProps.start_time}
-			id={testProps.id}
-			day={testProps.day}
-		/>
-	);
+	const { asFragment } = renderTimeSlot();
 
 	// Compare with saved snapshot
 	expect(asFragment()).toMatchSnapshot();
@@ -30,14 +36,7 @@ test('Timeslot should match with snapshot', () => {
 
 test('Timeslot renders times correctly', () => {
 	// First render component with props and get as fragment
-	render(
-		<TimeSlot
-			day={testProps.day}
-			start_time={testProps.start_time}
-			end_time={testProps.end_time}
-			id={testProps.id}
-		/>
-	);
+	renderTimeSlot();
 
 	// Compare start time
 	expect(screen.getByText(testProps.start_time)).toHaveTextContent(
@@ -50,49 +49,19 @@ test('Timeslot renders times correctly', () => {
 	);
 });
 
-test('Timeslot renders conditional classnames correctly | All true', () => {
+
+test('Timeslot renders conditional classnames correctly', () => {
 	// First render component with props and get as fragment
-	const { container } = render(
-		<TimeSlot
-			day={testProps.day}
-			start_time={testProps.start_time}
-			end_time={testProps.end_time}
-			id={testProps.id}
-		/>
-	);
+	const { container } = renderTimeSlot();
 
 	// eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
-	const available = container.getElementsByClassName('available');
+	const disabled = container.getElementsByClassName('disabled');
 
 	// eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
 	const selected = container.getElementsByClassName('selected');
 
-	// Check available slot
-	expect(available.length).toBe(1);
-
-	// Check selected class
-	expect(selected.length).toBe(1);
-});
-
-test('Timeslot renders conditional classnames correctly | All FALSE', () => {
-	// First render component with props and get as fragment
-	const { container } = render(
-		<TimeSlot
-			day={testProps.day}
-			start_time={testProps.start_time}
-			end_time={testProps.end_time}
-			id={testProps.id}
-		/>
-	);
-
-	// eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
-	const available = container.getElementsByClassName('available');
-
-	// eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
-	const selected = container.getElementsByClassName('selected');
-
-	// Check available slot
-	expect(available.length).toBe(0);
+	// Check disabled slot
+	expect(disabled.length).toBe(0);
 
 	// Check selected class
 	expect(selected.length).toBe(0);

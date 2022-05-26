@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Reservation card render with props should match with snapshot 1`] = `
+exports[`Reservation card should match with snapshot 1`] = `
 <DocumentFragment>
   <div
     class="container"
@@ -9,9 +9,27 @@ exports[`Reservation card render with props should match with snapshot 1`] = `
       class="row"
     >
       <div
-        class="col-12"
+        class="col-9"
       >
         Reservation
+      </div>
+      <div
+        class="col-3 my-auto"
+      >
+        <span
+          class="clear-link"
+        >
+          clear
+        </span>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="col-12"
+      >
+        July 9, 2018
       </div>
     </div>
     <div
@@ -32,39 +50,6 @@ exports[`Reservation card render with props should match with snapshot 1`] = `
       >
         09:00
       </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Reservation card should match with snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="container"
-  >
-    <div
-      class="row"
-    >
-      <div
-        class="col-12"
-      >
-        Reservation
-      </div>
-    </div>
-    <div
-      class="row"
-    >
-      <div
-        class="col-5"
-      />
-      <div
-        class="col-2"
-      >
-        -
-      </div>
-      <div
-        class="col-5"
-      />
     </div>
   </div>
 </DocumentFragment>
