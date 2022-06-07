@@ -4,6 +4,8 @@ import { TimeSlot } from 'store/slots/types';
 
 dayjs.extend(isBetween);
 
+const formatDay = (day: string) => dayjs(day).format('YYYY-MM-DD');
+
 export const checkDateIsBetween = ({
 	selectedSlot,
 	day,
@@ -19,32 +21,26 @@ export const checkDateIsBetween = ({
 	// Used for disable other time slots if agent occupied with these times
 	// add and removes one minute to calculate correct range
 	return (
-		(dayjs(
-			dayjs(`${dayjs(day).format('YYYY-MM-DD')} ${start_time}`).add(1, 'minute')
-		).isBetween(
-			`${dayjs(day).format('YYYY-MM-DD')} ${selectedSlot.start_time}`,
-			dayjs(
-				`${dayjs(day).format('YYYY-MM-DD')} ${selectedSlot.end_time}`
-			).subtract(1, 'minute'),
+		(dayjs(dayjs(`${formatDay(day)} ${start_time}`).add(1, 'minute')).isBetween(
+			`${formatDay(day)} ${selectedSlot.start_time}`,
+			dayjs(`${formatDay(day)} ${selectedSlot.end_time}`).subtract(1, 'minute'),
 			'minutes',
 			'[]'
 		) ||
 			dayjs(
-				dayjs(`${dayjs(day).format('YYYY-MM-DD')} ${end_time}`).subtract(
+				dayjs(`${formatDay(day)} ${end_time}`).subtract(1, 'minute')
+			).isBetween(
+				`${formatDay(day)} ${selectedSlot.start_time}`,
+				dayjs(`${formatDay(day)} ${selectedSlot.end_time}`).subtract(
 					1,
 					'minute'
-				)
-			).isBetween(
-				`${dayjs(day).format('YYYY-MM-DD')} ${selectedSlot.start_time}`,
-				dayjs(
-					`${dayjs(day).format('YYYY-MM-DD')} ${selectedSlot.end_time}`
-				).subtract(1, 'minute'),
+				),
 				'minutes',
 				'[]'
 			)) &&
-		dayjs(dayjs(selectedSlot.day).format('YYYY-MM-DD')).isBetween(
-			dayjs(dayjs(day).format('YYYY-MM-DD')).subtract(1, 'day'),
-			dayjs(dayjs(day).format('YYYY-MM-DD')).add(1, 'day'),
+		dayjs(formatDay(selectedSlot.day)).isBetween(
+			dayjs(formatDay(day)).subtract(1, 'day'),
+			dayjs(formatDay(day)).add(1, 'day'),
 			'day'
 		)
 	);

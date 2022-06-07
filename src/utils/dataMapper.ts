@@ -1,5 +1,6 @@
 import {
 	APICompany,
+	CompanySelectedSlot,
 	CompanySlots,
 	DaySlots,
 	TimeSlot,
@@ -48,4 +49,28 @@ const convertApiResponseToFEModel = (companies: Array<APICompany>) => {
 	}) as Array<CompanySlots>;
 };
 
-export { convertApiResponseToFEModel };
+const convertFEModelToAPIRequest = (
+	selectedSlot: Array<CompanySelectedSlot>
+) => {
+	return selectedSlot?.map((slot) => {
+		let formattedStartTimeSlot = `${dayjs(
+			`${slot.selectedSlot.day} ${slot.selectedSlot.start_time}`
+		).format('YYYY-MM-DDTHH:mm:ss.sssZ')}`;
+
+		let formattedEndTimeSlot = `${dayjs(
+			`${slot.selectedSlot.day} ${slot.selectedSlot.end_time}`
+		).format('YYYY-MM-DDTHH:mm:ss.sssZ')}`;
+
+		return {
+			id: slot.id,
+			time_slots: [
+				{
+					start_time: formattedStartTimeSlot,
+					end_time: formattedEndTimeSlot,
+				},
+			],
+		};
+	});
+};
+
+export { convertApiResponseToFEModel, convertFEModelToAPIRequest };
